@@ -13,13 +13,15 @@ const MovieCard = ({ item }) => {
       />
       <div className="flex flex-col flex-1">
         <div className="flex justify-between flex-col flex-1">
-            <h3 className="text-xl font-bold mb-3">{item.title}</h3>
-            <div className="flex items-center justify-between text-sm mb-7">
-                <span>{new Date(item.release_date).getFullYear()}</span>
-                <span>{item.vote_average}</span>
-            </div>
+          <h3 className="text-xl font-bold mb-3 movie-title">{item.title}</h3>
+          <div className="flex items-center justify-between text-sm mb-7">
+            <span>{new Date(item.release_date).getFullYear()}</span>
+            <span>{item.vote_average}</span>
+          </div>
         </div>
-        <Button bgColor="primary" onClick={() => navigate(`/movie/${item.id}`)}>Watch Now</Button>
+        <Button bgColor="primary" onClick={() => navigate(`/movie/${item.id}`)}>
+          Watch Now
+        </Button>
       </div>
     </div>
   );
