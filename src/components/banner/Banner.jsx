@@ -20,7 +20,7 @@ const Banner = () => {
   const genres = database?.data?.genres || [];
   //console.log(genres);
   return (
-    <section className="banner h-[500px] page-container mb-20 overflow-hidden">
+    <section className="banner h-[480px] page-container mb-20 overflow-hidden">
       <Swiper
         grabCursor={"true"}
         slidesPerView={1}
